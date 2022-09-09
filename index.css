@@ -1,0 +1,230 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: inherit;
+  font-size: inherit;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  line-height: 1;
+  font-size: 14px;
+  font-weight: 500;
+  font-family: "Inter";
+  color: #000000;
+}
+
+/*BLOCK МОДИФИКАТОРЫ*/
+.wrapper {
+  background-color: #1a1a1a;
+  min-height: 100%;
+  color: #ffffff;
+}
+
+._container {
+  max-width: 1480px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  box-sizing: content-box;
+}
+/* Цвет текста */
+.txt--white {
+  color: #FFFFFF;
+}
+/* ----------------------------------------------------------- */
+.main-container {
+  
+}
+
+.main-body {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.cv-column {
+  margin: 50px 0px 0px 0px;
+  flex: 0 1 31%;
+}
+
+.cv-achievements {
+  margin: 50px 0px 0px 0px;
+}
+
+.cv-achievements > *:not(:last-child) {
+  margin: 0px 0px 50px 0px;
+}
+
+.achievements {
+}
+
+.achievements-title {
+  font-weight: 600;
+  font-size: 75px;
+  line-height: calc(75 / 75 * 100%);
+}
+
+.achievements-info {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.achievements-info__item {
+  flex: 1 1 40%;
+  padding: 0px 0px 28px 0px;
+}
+
+.info__item__title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  color: gray;
+}
+
+.info__item__sup-title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+
+.achievements-tech {
+}
+.achievements-tech > *:not(:last-child) {
+  margin: 0px 0px 17px 0px;
+}
+
+.achievements-tech__title {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: calc(25 / 30 * 100%);
+}
+
+.achievements-tech__item {
+}
+
+.tech-item__background {
+  width: 100%;
+  height: 7px;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+}
+
+.tech-item__progress-line {
+  width: 30%;
+  height: 7px;
+
+  background: #ffffff;
+  border-radius: 10px;
+}
+.tech-item__progress-line:first-child  {
+  width: 130px;
+
+}
+
+.tech-item__title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+.cv-information {
+  margin: 50px 0px 0px 0px;
+}
+
+.cv-information > *:not(:last-child) {
+  margin: 0px 0px 50px 0px;
+}
+
+.information {
+}
+
+.information-item {
+}
+
+.information-item__title {
+  font-size: 30px;
+  font-weight: 600;
+  line-height: calc(25 / 30 * 100%);
+  margin-bottom: 20px;
+}
+
+.information-item__text {
+  max-width: 460px;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: calc(25 / 15 * 100%);
+  color: #FFFFFF;
+}
+
+.information-item__text-needs {
+  max-width: 460px;
+
+}
+
+.information-item__text-needs > li {
+  list-style-type: initial;
+}
+
+.information-item__text-needs > *:not(:last-child) {
+  margin: 0px 0px 10px 0px;
+}
+
+.cv-avatar {
+ margin: 50px 0px 0px 0px;
+}
+
+.avatar-image {
+  border-radius: 7px;
+  max-width: 100%;
+  height: 100%;
+  max-height: 750px;
+  object-fit: contain;
+}
+
+@media (max-width: 500px) {
+  .main-body {
+    flex-direction: column;
+  }
+  .cv-column {
+    flex: 1 1 auto;
+  }
+}
+
+ @media (max-width:400px) {
+  .achievements-title {
+    font-size: 60px;
+  }
+  .information-item__text {
+    padding: 0 5px;
+  }
+ }
+
+ @media (max-width:320px) {
+  .achievements-title {
+    font-size: 50px;
+  }
+ }
