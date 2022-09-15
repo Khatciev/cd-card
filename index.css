@@ -11,20 +11,6 @@ a {
   text-decoration: none;
 }
 
-img {
-  vertical-align: top;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: inherit;
-  font-size: inherit;
-}
-
 html,
 body {
   width: 100%;
@@ -39,7 +25,6 @@ body {
 /*BLOCK МОДИФИКАТОРЫ*/
 .wrapper {
   background-color: #1a1a1a;
-  min-height: 100%;
   color: #ffffff;
 }
 
@@ -67,7 +52,7 @@ body {
 
 .cv-column {
   margin: 50px 0px 0px 0px;
-  flex: 0 1 31%;
+  flex: 0 1 30%;
 }
 
 .cv-achievements {
@@ -87,27 +72,28 @@ body {
   line-height: calc(75 / 75 * 100%);
 }
 
-.achievements-info {
+.info {
   display: flex;
   flex-wrap: wrap;
 }
 
-.achievements-info__item {
+.info-item {
   flex: 1 1 40%;
   padding: 0px 0px 28px 0px;
 }
 
-.info__item__title {
+.info-item__title {
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
   color: gray;
 }
 
-.info__item__sup-title {
+.info-item__sup-title {
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
+  font-style: normal;
   color: #FFFFFF;
 }
 
@@ -134,7 +120,6 @@ body {
 }
 
 .tech-item__progress-line {
-  width: 30%;
   height: 7px;
 
   background: #ffffff;
@@ -214,7 +199,7 @@ body {
   }
 }
 
- @media (max-width:400px) {
+ @media (max-width:420px) {
   .achievements-title {
     font-size: 60px;
   }
