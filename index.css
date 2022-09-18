@@ -23,25 +23,22 @@ body {
 }
 
 /*BLOCK МОДИФИКАТОРЫ*/
-.wrapper {
+.content {
   background-color: #1a1a1a;
   color: #ffffff;
   min-height: 100%;
 }
 
-._container {
-  max-width: 1480px;
-  padding: 0px 15px;
-  margin: 0px auto;
-  box-sizing: content-box;
-}
 /* Цвет текста */
 .txt--white {
   color: #FFFFFF;
 }
 /* ----------------------------------------------------------- */
 .main-container {
-  
+  max-width: 1480px;
+  padding: 0px 15px;
+  margin: 0px auto;
+  box-sizing: content-box;
 }
 
 .main-body {
