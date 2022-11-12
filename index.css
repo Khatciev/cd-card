@@ -15,26 +15,24 @@ body {
   font-size: 14px;
   font-weight: 500;
   font-family: "Inter";
-  color: #000000;
 }
 
-/*BLOCK МОДИФИКАТОРЫ*/
 .content {
   background-color: #1a1a1a;
   color: #ffffff;
-  min-height: 100%;
-}
-
-/* Цвет текста */
-.txt--white {
-  color: #FFFFFF;
-}
-/* ----------------------------------------------------------- */
-.main-container {
-  max-width: 1480px;
+  max-width: 1680px;
   padding: 0px 15px;
   margin: 0px auto;
-  box-sizing: content-box;
+}
+
+/* ----------------------------------------------------------- */
+
+.txt-ellieps {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .main-body {
@@ -45,20 +43,14 @@ body {
 }
 
 .cv-column {
-  margin: 50px 0px 0px 0px;
-  flex: 0 1 30%;
+  flex: 0 1 31%;
 }
 
 .cv-achievements {
-  margin: 50px 0px 0px 0px;
+  margin: 0px 0px 0px 0px;
 }
 
-.cv-achievements > *:not(:last-child) {
-  margin: 0px 0px 50px 0px;
-}
 
-.achievements {
-}
 
 .achievements-title {
   font-weight: 600;
@@ -69,89 +61,80 @@ body {
 .info {
   display: flex;
   flex-wrap: wrap;
+  margin-top: 65px;
+  margin-bottom: 50px;
 }
 
-.info-item {
+
+.info__item {
   flex: 1 1 40%;
-  padding: 0px 0px 28px 0px;
+  margin: 0px 0px 30px 0px;
 }
 
-.info-item__title {
+.info__item-title {
   font-size: 15px;
   font-weight: 500;
-  line-height: 25px;
+  /* line-height: 25px; */
   color: gray;
+  max-width: 206px;
 }
 
-.info-item__sup-title {
+.info__item-suptitle {
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
   font-style: normal;
   color: #FFFFFF;
+  max-width: 206px;
 }
 
-.achievements-tech {
-}
-.achievements-tech > *:not(:last-child) {
+.achievements__tech>*:not(:last-child) {
   margin: 0px 0px 17px 0px;
 }
 
-.achievements-tech__title {
+.achievements__tech-title {
   font-weight: 600;
   font-size: 30px;
   line-height: calc(25 / 30 * 100%);
 }
 
-.achievements-tech__item {
-}
-
-.tech-item__background {
+.tech__item-background {
   width: 100%;
   height: 7px;
   background: rgba(255, 255, 255, 0.3);
   border-radius: 10px;
 }
 
-.tech-item__progress-line {
+.tech__item-progress-line {
   height: 7px;
-
   background: #ffffff;
   border-radius: 10px;
 }
-.tech-item__progress-line:first-child  {
-  width: 130px;
 
+.tech__item-progress-line:first-child {
+  width: 130px;
 }
 
-.tech-item__title {
+.tech__item-title {
   font-size: 15px;
   font-weight: 500;
   line-height: 25px;
 }
 
-.cv-information {
-  margin: 50px 0px 0px 0px;
+
+
+.cv-information>*:not(:last-child) {
+  margin: 0px 0px 47px 0px;
 }
 
-.cv-information > *:not(:last-child) {
-  margin: 0px 0px 50px 0px;
-}
-
-.information {
-}
-
-.information-item {
-}
-
-.information-item__title {
+.information__item-title {
   font-size: 30px;
   font-weight: 600;
   line-height: calc(25 / 30 * 100%);
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 }
 
-.information-item__text {
+.information__item-text {
   max-width: 460px;
   font-weight: 500;
   font-size: 15px;
@@ -159,27 +142,38 @@ body {
   color: #FFFFFF;
 }
 
-.information-item__text-needs {
+.information__item-text-needs {
   max-width: 460px;
-
 }
 
-.information-item__text-needs > li {
+.information__item-text-needs>li {
   list-style-type: initial;
 }
 
-.information-item__text-needs > *:not(:last-child) {
+.information__item-text-needs>*:not(:last-child) {
   margin: 0px 0px 10px 0px;
 }
 
+.cv-column-avatar {}
+
 .cv-avatar {
- margin: 50px 0px 0px 0px;
+  position: relative;
+  margin: 50px 0px 50px 0px;
+  text-align: center;
+  flex: 0 1 34%;
+}
+
+.bottom-right {
+  font-weight: 600;
+  font-size: 26px;
+  position: absolute;
+  bottom: 7%;
+  right: 16px;
 }
 
 .avatar-image {
   border-radius: 7px;
   max-width: 100%;
-  height: 100%;
   max-height: 750px;
   object-fit: contain;
 }
@@ -188,22 +182,32 @@ body {
   .main-body {
     flex-direction: column;
   }
+
+  .cv-information {
+    margin-top: 50px;
+  }
+
   .cv-column {
     flex: 1 1 auto;
   }
 }
 
- @media (max-width:420px) {
+@media (max-width:420px) {
+  .bottom-right {
+    font-size: 24px;
+  }
+
   .achievements-title {
     font-size: 60px;
   }
-  .information-item__text {
+
+  .information__item-text {
     padding: 0 5px;
   }
- }
+}
 
- @media (max-width:320px) {
+@media (max-width:320px) {
   .achievements-title {
     font-size: 50px;
   }
- }
+}
