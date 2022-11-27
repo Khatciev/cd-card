@@ -172,10 +172,7 @@ body {
 }
 
 @media (max-width: 1350px) {
-  .avatar-image {
-    object-fit: contain;
-    max-height: 750px;
-  }
+
 
   .bottom-right {
     bottom: 15%;
@@ -189,23 +186,33 @@ body {
     margin-top: 50px;
   }
 
-  .cv-column {
+  .main-body>*:not(:last-child) {
     margin: 0px 0px 50px 0px;
+
+  }
+
+  .cv-column {
     flex: 1 1 auto;
   }
 }
 
 @media (max-width:420px) {
 
+  .avatar-image {
+    object-fit: contain;
+    height: 100%;
+  }
 
   .achievements-title {
     font-size: 60px;
   }
+
   .bottom-right {
     bottom: 30%;
     font-size: 20px;
     max-width: 180px;
   }
+
   .information__item-text {
     padding: 0 5px;
   }
@@ -215,5 +222,5 @@ body {
   .achievements-title {
     font-size: 50px;
   }
- 
+
 }
